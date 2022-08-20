@@ -20,4 +20,4 @@ docker run \
   --env DISPLAY=$DISPLAY \
   --env TERM=xterm-256color \
   -v $(pwd):$(pwd) -w $(pwd)\
-  mahesh0537/mlcv:latest 
+  openvino/openvino_tensorflow_ubuntu18_runtime:latest
