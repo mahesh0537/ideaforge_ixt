@@ -8,7 +8,7 @@ xauth nlist $DISPLAY | sed -e 's/^..../ffff/' | xauth -f $XAUTH nmerge -
 echo "Running Docker Container"
 
 
-docker run \
+sudo docker run \
   -it \
   --network host \
   --privileged \
@@ -20,4 +20,4 @@ docker run \
   --env DISPLAY=$DISPLAY \
   --env TERM=xterm-256color \
   -v $(pwd):$(pwd) -w $(pwd)\
-  openvino/openvino_tensorflow_ubuntu18_runtime:latest
+  mahesh0537/mlcv

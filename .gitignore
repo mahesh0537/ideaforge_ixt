@@ -1,0 +1,4 @@
+*.sh
+test*
+.ipynb_checkpoints
+mlcv.sh
